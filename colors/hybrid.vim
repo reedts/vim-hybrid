@@ -193,6 +193,13 @@ elseif has("terminal")
         \ ]
 endif
 
+let g:rainbow_conf = {
+\	'guifgs': ['#ffffff', '#cc6666', '#b5bd68', '#8abeb7', '#f0c674', '#b294bb', '#de935f'],
+\   'separately': {
+\       'cmake': 0,
+\   }
+\}
+
 let s:palette.cterm.background = { 'dark' : "234"              , 'light' : "254" }
 let s:palette.cterm.foreground = { 'dark' : s:cterm_foreground , 'light' : "16"  }
 let s:palette.cterm.window     = { 'dark' : "236"              , 'light' : "247" }
