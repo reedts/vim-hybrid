@@ -391,6 +391,17 @@ endif
 exe "hi! Normal"        .s:fg_foreground  .s:bg_normal      .s:fmt_none
 
 "}}}
+" Mail Highlighting: (see :help highlight-groups)"{{{
+" ----------------------------------------------------------------------------
+exe "hi! mailQuoted1"         .s:fg_aqua     .s:bg_none        .s:fmt_none
+exe "hi! mailQuoted2"         .s:fg_green    .s:bg_none        .s:fmt_none
+exe "hi! mailQuoted3"         .s:fg_orange   .s:bg_none        .s:fmt_none
+exe "hi! mailQuoted4"         .s:fg_red      .s:bg_none        .s:fmt_none
+exe "hi! mailQuoted5"         .s:fg_purple   .s:bg_none        .s:fmt_none
+exe "hi! mailQuoted6"         .s:fg_blue     .s:bg_none        .s:fmt_none
+"}}}
+
+"}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
