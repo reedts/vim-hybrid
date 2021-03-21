@@ -194,12 +194,17 @@ elseif has("terminal")
 endif
 
 let g:rainbow_conf = {
-\	'guifgs': ['#ffffff', '#cc6666', '#b5bd68', '#8abeb7', '#f0c674', '#b294bb', '#de935f'],
+\   'guifgs': ['#ffffff', '#cc6666', '#b5bd68', '#8abeb7', '#f0c674', '#b294bb', '#de935f'],
 \   'separately': {
 \       'cmake': 0,
 \       'cpp': {
-\         'parentheses': [
-\           'start=/\(\(\<operator\>\)\@<!<\)\&[a-zA-Z0-9_]\@<=<\ze[^<]/ end=/>/'] }
+\           'parentheses': [
+\               'start=/(/ end=/)/ fold',
+\               'start=/\[/ end=/\]/ fold',
+\               'start=/{/ end=/}/ fold',
+\               'start=/\(\(\<operator\>\)\@<!<\)\&[a-zA-Z0-9_]\@<=<\ze[^<]/ end=/>/'
+\           ]
+\       }
 \   }
 \}
 
