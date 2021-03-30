@@ -487,7 +487,7 @@ hi! link diffAdded Special
 
 "}}}
 " Custom Highlighting Groups:"{{{
-exe "hi! Illuminate"        .s:fg_background        .s:bg_purple   .s:fmt_none
+exe "hi! Illuminate"        .s:fg_none        .s:bg_selection   .s:fmt_none
 "}}}
 
 "
