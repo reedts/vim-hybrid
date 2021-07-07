@@ -498,6 +498,11 @@ exe "hi! LspDiagnosticsSignError"       .s:fg_red        .s:bg_none        .s:fm
 exe "hi! LspDiagnosticsSignInformation" .s:fg_yellow     .s:bg_none        .s:fmt_none
 exe "hi! LspDiagnosticsSignHint"        .s:fg_comment    .s:bg_none        .s:fmt_none
 
+exe "hi! DapBreakpoint" .s:fg_blue   .s:bg_none .s:fmt_none
+exe "hi! DapLogPoint"   .s:fg_purple .s:bg_none .s:fmt_none
+exe "hi! DapStopped"    .s:fg_green  .s:bg_none .s:fmt_none
+exe "hi! DapRejected"   .s:fg_red    .s:bg_none .s:fmt_none
+
 "}}}
 
 "
