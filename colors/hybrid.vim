@@ -490,19 +490,17 @@ hi! link diffAdded Special
 exe "hi! Illuminate"          .s:fg_none        .s:bg_selection   .s:fmt_none
 exe "hi! SignatureMarkText"   .s:fg_purple      .s:bg_none        .s:fmt_none
 
-exe "hi! LspReferenceText"              .s:fg_none       .s:bg_selection   .s:fmt_none
-exe "hi! LspReferenceRead"              .s:fg_green      .s:bg_selection   .s:fmt_none
-exe "hi! LspReferenceWrite"             .s:fg_red        .s:bg_selection   .s:fmt_none
-exe "hi! LspDiagnosticsSignWarning"     .s:fg_orange     .s:bg_none        .s:fmt_none
-exe "hi! LspDiagnosticsSignError"       .s:fg_red        .s:bg_none        .s:fmt_bold
-exe "hi! LspDiagnosticsSignInformation" .s:fg_yellow     .s:bg_none        .s:fmt_none
-exe "hi! LspDiagnosticsSignHint"        .s:fg_comment    .s:bg_none        .s:fmt_none
-
 exe "hi! DapBreakpoint" .s:fg_blue   .s:bg_none .s:fmt_none
 exe "hi! DapLogPoint"   .s:fg_purple .s:bg_none .s:fmt_none
 exe "hi! DapStopped"    .s:fg_green  .s:bg_none .s:fmt_none
 exe "hi! DapRejected"   .s:fg_red    .s:bg_none .s:fmt_none
+"}}}
 
+" LSP Groups:"{{{
+exe "hi! LspReferenceText"             .s:fg_none       .s:bg_selection   .s:fmt_none
+exe "hi! LspReferenceRead"             .s:fg_green      .s:bg_selection   .s:fmt_none
+exe "hi! LspReferenceWrite"            .s:fg_red        .s:bg_selection   .s:fmt_none
+exe "hi! LspSignatureActiveParameter"  .s:fg_blue       .s:bg_selection   .s:fmt_none
 "}}}
 
 "
