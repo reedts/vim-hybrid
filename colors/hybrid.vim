@@ -490,6 +490,9 @@ hi! link diffAdded Special
 exe "hi! Illuminate"          .s:fg_none        .s:bg_selection   .s:fmt_none
 exe "hi! SignatureMarkText"   .s:fg_purple      .s:bg_none        .s:fmt_none
 
+exe "hi! IndentBlanklineContextChar"    .s:fg_blue   .s:bg_none  .s:fmt_none
+exe "hi! IndentBlanklineContextStart"   .s:fg_none   .s:bg_none  .s:fmt_bold  .s:sp_aqua
+
 exe "hi! DapBreakpoint" .s:fg_blue   .s:bg_none .s:fmt_none
 exe "hi! DapLogPoint"   .s:fg_purple .s:bg_none .s:fmt_none
 exe "hi! DapStopped"    .s:fg_green  .s:bg_none .s:fmt_none
