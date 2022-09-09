@@ -244,6 +244,7 @@ let s:s      = ",standout"
 let s:b      = ",bold"
 let s:u      = ",underline"
 let s:i      = ",italic"
+let s:t      = ",strikethrough"
 
 "}}}
 " Highlighting Primitives:"{{{
@@ -316,6 +317,7 @@ exe "let s:fmt_ital = ' gui=NONE".s:i.      " cterm=NONE".s:i.      " term=NONE"
 exe "let s:fmt_stnd = ' gui=NONE".s:s.      " cterm=NONE".s:s.      " term=NONE".s:s    ."'"
 exe "let s:fmt_revr = ' gui=NONE".s:r.      " cterm=NONE".s:r.      " term=NONE".s:r    ."'"
 exe "let s:fmt_revb = ' gui=NONE".s:r.s:b.  " cterm=NONE".s:r.s:b.  " term=NONE".s:r.s:b."'"
+exe "let s:fmt_stri = ' gui=NONE".s:t.      " cterm=NONE".s:t.      " term=NONE".s:t    ."'"
 
 exe "let s:sp_none       = ' guisp=". s:none                            ."'"
 exe "let s:sp_foreground = ' guisp=". s:palette.gui.foreground[s:style] ."'"
@@ -493,10 +495,25 @@ exe "hi! SignatureMarkText"   .s:fg_purple      .s:bg_none        .s:fmt_none
 exe "hi! IndentBlanklineContextChar"    .s:fg_blue   .s:bg_none  .s:fmt_none
 exe "hi! IndentBlanklineContextStart"   .s:fg_none   .s:bg_none  .s:fmt_bold  .s:sp_aqua
 
+" dap
 exe "hi! DapBreakpoint" .s:fg_blue   .s:bg_none .s:fmt_none
 exe "hi! DapLogPoint"   .s:fg_purple .s:bg_none .s:fmt_none
 exe "hi! DapStopped"    .s:fg_green  .s:bg_none .s:fmt_none
 exe "hi! DapRejected"   .s:fg_red    .s:bg_none .s:fmt_none
+
+" telescope
+exe "hi! TelescopeSelection"       .s:fg_none   .s:bg_selection .s:fmt_none
+exe "hi! TelescopeMultiSelection"  .s:fg_orange .s:bg_none      .s:fmt_none
+exe "hi! TelescopeMatching"        .s:fg_purple .s:bg_none      .s:fmt_none
+
+" cmp
+exe "hi! CmpItemKind"           .s:fg_green     .s:bg_none  .s:fmt_none
+exe "hi! CmpItemKindSnippet"    .s:fg_blue      .s:bg_none  .s:fmt_none
+exe "hi! CmpItemKindFile"       .s:fg_orange    .s:bg_none  .s:fmt_none
+exe "hi! CmpItemKindFolder"     .s:fg_orange    .s:bg_none  .s:fmt_none
+exe "hi! CmpItemAbbrDeprecated" .s:fg_none      .s:bg_none  .s:fmt_stri
+exe "hi! CmpItemAbbrMatch"      .s:fg_purple    .s:bg_none  .s:fmt_none
+exe "hi! CmpItemAbbrMatchFuzzy" .s:fg_purple    .s:bg_none  .s:fmt_none
 "}}}
 
 " LSP Groups:"{{{
