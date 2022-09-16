@@ -521,6 +521,9 @@ exe "hi! LspReferenceText"             .s:fg_none       .s:bg_selection   .s:fmt
 exe "hi! LspReferenceRead"             .s:fg_green      .s:bg_selection   .s:fmt_none
 exe "hi! LspReferenceWrite"            .s:fg_red        .s:bg_selection   .s:fmt_none
 exe "hi! LspSignatureActiveParameter"  .s:fg_blue       .s:bg_selection   .s:fmt_none
+" exe "hi! DiagnosticInfo"               .s:fg_blue       .s:bg_none   .s:fmt_none
+" exe "hi! DiagnosticWarn"               .s:fg_orange     .s:bg_none   .s:fmt_none
+" exe "hi! DiagnosticError"              .s:fg_red        .s:bg_none   .s:fmt_none
 "}}}
 
 "
