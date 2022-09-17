@@ -526,6 +526,16 @@ exe "hi! LspSignatureActiveParameter"  .s:fg_blue       .s:bg_selection   .s:fmt
 " exe "hi! DiagnosticError"              .s:fg_red        .s:bg_none   .s:fmt_none
 "}}}
 
+
+" Airline Groups:"{{{
+exe "hi! AirlineNormal"       .s:fg_addfg       .s:bg_addbg     .s:fmt_none
+exe "hi! AirlineInsert"       .s:fg_background  .s:bg_blue      .s:fmt_none
+exe "hi! AirlineReplace"      .s:fg_background  .s:bg_purple    .s:fmt_none
+exe "hi! AirlineVisual"       .s:fg_background  .s:bg_aqua      .s:fmt_none
+exe "hi! AirlineWarning"      .s:fg_background  .s:bg_orange    .s:fmt_none
+exe "hi! AirlineError"        .s:fg_background  .s:bg_red       .s:fmt_none
+"}}}
+
 "
 " This is needed for some reason: {{{
 
