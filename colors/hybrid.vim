@@ -90,9 +90,9 @@ if exists("g:hybrid_reduced_contrast") && g:hybrid_reduced_contrast == 1
   let s:gui_line       = "#2d3c46"
   let s:gui_comment    = "#6c7a80"
 else
-  let s:gui_background = "#1d1f21"
-  let s:gui_selection  = "#373b41"
-  let s:gui_line       = "#282a2e"
+  let s:gui_background = "#2d2d2d"
+  let s:gui_selection  = "#474b51"
+  let s:gui_line       = "#383a3e"
   let s:gui_comment    = "#707880"
 endif
 
@@ -109,7 +109,7 @@ let s:palette.gui.aqua       = { 'dark' : "#8abeb7"        , 'light' : "#005f5f"
 let s:palette.gui.blue       = { 'dark' : "#81a2be"        , 'light' : "#00005f" }
 let s:palette.gui.purple     = { 'dark' : "#b294bb"        , 'light' : "#5f005f" }
 let s:palette.gui.window     = { 'dark' : "#303030"        , 'light' : "#9e9e9e" }
-let s:palette.gui.darkcolumn = { 'dark' : "#1c1c1c"        , 'light' : "#808080" }
+let s:palette.gui.darkcolumn = { 'dark' : "#2d2d2d"        , 'light' : "#808080" }
 let s:palette.gui.addbg      = { 'dark' : "#5F875F"        , 'light' : "#d7ffd7" }
 let s:palette.gui.addfg      = { 'dark' : "#d7ffaf"        , 'light' : "#005f00" }
 let s:palette.gui.changebg   = { 'dark' : "#5F5F87"        , 'light' : "#d7d7ff" }
@@ -150,7 +150,7 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#1d1f21"
+  let g:terminal_color_0 =  "#2d2d2d"
   let g:terminal_color_1 =  "#cc6666"
   let g:terminal_color_2 =  "#b5bd68"
   let g:terminal_color_3 =  "#f0c674"
@@ -174,7 +174,7 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#1d1f21",
+        \ "#2d2d2d",
         \ "#cc6666",
         \ "#b5bd68",
         \ "#f0c674",
