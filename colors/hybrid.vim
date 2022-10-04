@@ -536,6 +536,13 @@ exe "hi! AirlineWarning"      .s:fg_background  .s:bg_orange    .s:fmt_none
 exe "hi! AirlineError"        .s:fg_background  .s:bg_red       .s:fmt_none
 "}}}
 
+
+" Illuminate Group:"{{{
+hi! link IlluminatedWordText Illuminate
+hi! link IlluminatedWordRead LspReferenceRead
+hi! link IlluminatedWordWrite LspReferenceWrite
+"}}}
+
 "
 " This is needed for some reason: {{{
 
